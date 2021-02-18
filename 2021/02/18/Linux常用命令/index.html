@@ -105,15 +105,15 @@
 
 
 
-<meta name="description" content="不会吧不会吧不会还有人没用过Linux吧???">
+<meta name="description" content="我会把我常用的命令用下面方式处理  sudo su">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux常用命令">
 <meta property="og:url" content="https://flamingo39.github.io/blog/2021/02/18/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Mechanical &amp; Code Technology">
-<meta property="og:description" content="不会吧不会吧不会还有人没用过Linux吧???">
+<meta property="og:description" content="我会把我常用的命令用下面方式处理  sudo su">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-02-18T08:33:24.000Z">
-<meta property="article:modified_time" content="2021-02-18T09:02:43.586Z">
+<meta property="article:modified_time" content="2021-02-18T09:09:41.238Z">
 <meta property="article:author" content="Flamingo">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
@@ -379,7 +379,10 @@
       
 
       
-        <p><strong>不会吧不会吧不会还有人没用过Linux吧???</strong></p>
+        <p><strong>我会把我常用的命令用下面方式处理</strong></p>
+<blockquote>
+<p>sudo su</p>
+</blockquote>
 <a id="more"></a>
 
 <h2 id="1-系统信息"><a href="#1-系统信息" class="headerlink" title="1. 系统信息"></a>1. 系统信息</h2><ul>
@@ -402,40 +405,82 @@
 <li><code>cal 2021</code> 显示2021年的日历表 </li>
 <li><code>date 041217002007.00</code> 设置日期和时间 - 月日时分年.秒 </li>
 <li><code>clock -w</code> 将时间修改保存到 BIOS <h2 id="2-关机-系统的关机-重启以及登出"><a href="#2-关机-系统的关机-重启以及登出" class="headerlink" title="2. 关机(系统的关机,重启以及登出)"></a>2. 关机(系统的关机,重启以及登出)</h2></li>
-<li><code>shutdown -h now</code> 关闭系统(1) </li>
+<li><blockquote>
+<p><code>shutdown -h now</code> 关闭系统(1) </p>
+</blockquote>
+</li>
 <li><code>init 0</code> 关闭系统(2) </li>
 <li><code>telinit 0</code> 关闭系统(3) </li>
 <li><code>shutdown -h hours:minutes &amp;</code> 按预定时间关闭系统 </li>
 <li><code>shutdown -c</code> 取消按预定时间关闭系统 </li>
-<li><code>shutdown -r now</code> 重启(1) </li>
-<li><code>reboot</code> 重启(2) </li>
-<li><code>logout</code> 注销 <h2 id="3-文件和目录"><a href="#3-文件和目录" class="headerlink" title="3. 文件和目录"></a>3. 文件和目录</h2></li>
-<li><code>cd /home</code> 进入 ‘/ home’ 目录’ </li>
-<li><code>cd ..</code> 返回上一级目录 </li>
-<li><code>cd ../..</code> 返回上两级目录 </li>
+<li><blockquote>
+<p><code>shutdown -r now</code> 重启(1) </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><code>reboot</code> 重启(2) </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><code>logout</code> 注销 </p>
+</blockquote>
+<h2 id="3-文件和目录"><a href="#3-文件和目录" class="headerlink" title="3. 文件和目录"></a>3. 文件和目录</h2></li>
+<li><blockquote>
+<p><code>cd /home</code> 进入 ‘/ home’ 目录’ </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><code>cd ..</code> 返回上一级目录 </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><code>cd ../..</code> 返回上两级目录 </p>
+</blockquote>
+</li>
 <li><code>cd</code> 进入个人的主目录 </li>
 <li><code>cd ~user1</code> 进入个人的主目录 </li>
-<li><code>cd -</code> 返回上次所在的目录 </li>
+<li><blockquote>
+<p><code>cd -</code> 返回上次所在的目录 </p>
+</blockquote>
+</li>
 <li><code>pwd</code> 显示工作路径 </li>
-<li><code>ls</code> 查看目录中的文件 </li>
+<li><blockquote>
+<p><code>ls</code> 查看目录中的文件 </p>
+</blockquote>
+</li>
 <li><code>ls -F</code> 查看目录中的文件 </li>
 <li><code>ls -l</code> 显示文件和目录的详细资料 </li>
-<li><code>ls -a</code> 显示隐藏文件 </li>
+<li><blockquote>
+<p><code>ls -a</code> 显示隐藏文件 </p>
+</blockquote>
+</li>
 <li><code>ls *[0-9]*</code> 显示包含数字的文件名和目录名 </li>
 <li><code>tree</code> 显示文件和目录由根目录开始的树形结构(1) </li>
 <li><code>lstree</code> 显示文件和目录由根目录开始的树形结构(2) </li>
-<li><code>mkdir dir1</code> 创建一个叫做 ‘dir1’ 的目录’ </li>
+<li><blockquote>
+<p><code>mkdir dir1</code> 创建一个叫做 ‘dir1’ 的目录’ </p>
+</blockquote>
+</li>
 <li><code>mkdir dir1 dir2</code> 同时创建两个目录 </li>
 <li><code>mkdir -p /tmp/dir1/dir2</code> 创建一个目录树 </li>
 <li><code>rm -f file1</code> 删除一个叫做 ‘file1’ 的文件’ </li>
 <li><code>rmdir dir1</code> 删除一个叫做 ‘dir1’ 的目录’ </li>
 <li><code>rm -rf dir1</code> 删除一个叫做 ‘dir1’ 的目录并同时删除其内容 </li>
 <li><code>rm -rf dir1 dir2</code> 同时删除两个目录及它们的内容 </li>
-<li><code>mv dir1 new_dir</code> 重命名/移动 一个目录 </li>
-<li><code>cp file1 file2</code> 复制一个文件 </li>
+<li><blockquote>
+<p><code>mv dir1 new_dir</code> 重命名/移动 一个目录 </p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><code>cp file1 file2</code> 复制一个文件 </p>
+</blockquote>
+</li>
 <li><code>cp dir/* .</code> 复制一个目录下的所有文件到当前工作目录 </li>
 <li><code>cp -a /tmp/dir1 .</code> 复制一个目录到当前工作目录 </li>
-<li><code>cp -a dir1 dir2</code> 复制一个目录 </li>
+<li><blockquote>
+<p><code>cp -a dir1 dir2</code> 复制一个目录 </p>
+</blockquote>
+</li>
 <li><code>ln -s file1 lnk1</code> 创建一个指向文件或目录的软链接 </li>
 <li><code>ln file1 lnk1</code> 创建一个指向文件或目录的物理链接 </li>
 <li><code>touch -t 0712250000 file1</code> 修改一个文件或目录的时间戳 - (YYMMDDhhmm) <h2 id="4-文件搜索"><a href="#4-文件搜索" class="headerlink" title="4. 文件搜索"></a>4. 文件搜索</h2></li>
