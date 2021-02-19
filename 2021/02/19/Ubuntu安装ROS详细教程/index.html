@@ -113,7 +113,7 @@
 <meta property="og:description" content="今天弄了好久的ROS,总算是装好了，发现网上好多文章都还是Ubuntu老版本的,小白又不懂的怎么按Ubuntu版本灵活变换,所以我写下了这篇教程.">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-02-19T15:13:24.000Z">
-<meta property="article:modified_time" content="2021-02-19T16:43:08.194Z">
+<meta property="article:modified_time" content="2021-02-19T16:47:31.160Z">
 <meta property="article:author" content="Flamingo">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
@@ -400,8 +400,7 @@
 <p>的错误<br>请输入<br><code>sudo rm /etc/ros/rosdep/sources.list.d/20-default.list</code><br>到这里如果再输入<code>sudo rosdep init</code>命令试试,应该就会出现了之前介绍的我们想要的界面了.</p>
 <h2 id="6-更新rosdep"><a href="#6-更新rosdep" class="headerlink" title="6. 更新rosdep"></a>6. <strong>更新rosdep</strong></h2><p><code> rosdep update</code><br>这一步真的很令人难受，很容易出现没有<strong>找到资源</strong>或者<strong>链接超时</strong>之类的错误，比如:<br>unable to process source或error loading sources list: The read operation timed out<br>多试几次就好了,可以试试手机流量开热点.</p>
 <h2 id="7-设置环境变量"><a href="#7-设置环境变量" class="headerlink" title="7. 设置环境变量"></a>7. <strong>设置环境变量</strong></h2><ul>
-<li>!!! 注意将下面命令中的<strong>noetic</strong>更换为你的Ubuntu对应的版本<br><code>echo &quot;source /opt/ros/noetic/setup.bash&quot; &gt;&gt; ~/.bashrc</code><br>输入以下命令,运行该脚本让环境变量生效<br>(如果你手贱不小心输错了其他版本后面一个命令将会无效<br>这时候,输入<code>sudo gedit ~/.bashrc</code><br>(gedit是Ubuntu自带的文本编辑器,这行命令意思就是以管理员权限(sudo)用gedit打开bashrc这个文件)</li>
-<li>*在最后一行找到刚刚输入进去的环境变量,将其删去,再执行前一个命令)**</li>
+<li>!!! 注意将下面命令中的<strong>noetic</strong>更换为你的Ubuntu对应的版本<br><code>echo &quot;source /opt/ros/noetic/setup.bash&quot; &gt;&gt; ~/.bashrc</code><br>输入以下命令,运行该脚本让环境变量生效<br>(如果你手贱不小心输错了其他版本后面一个命令将会无效<br>这时候,输入<code>sudo gedit ~/.bashrc</code><br>(gedit是Ubuntu自带的文本编辑器,这行命令意思就是以管理员权限(sudo)用gedit打开bashrc这个文件)<br>在最后一行找到刚刚输入进去的环境变量,将其删去,再执行前一个命令).</li>
 </ul>
 <p>然后执行<br><code>source ~/.bashrc</code></p>
 <h2 id="8-安装rosinstall"><a href="#8-安装rosinstall" class="headerlink" title="8. 安装rosinstall"></a>8. <strong>安装rosinstall</strong></h2><p>输入</p>
