@@ -113,7 +113,7 @@
 <meta property="og:description" content="今天弄了好久的ROS,总算是装好了，发现网上好多文章都还是Ubuntu老版本的,小白又不懂的怎么按Ubuntu版本灵活变换,所以我写下了这篇教程.">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-02-19T15:13:24.000Z">
-<meta property="article:modified_time" content="2021-02-19T16:27:27.668Z">
+<meta property="article:modified_time" content="2021-02-19T16:29:34.829Z">
 <meta property="article:author" content="Flamingo">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
@@ -379,9 +379,9 @@
       
 
       
-        <ul>
-<li><strong>今天弄了好久的ROS,总算是装好了，发现网上好多文章都还是Ubuntu老版本的,小白又不懂的怎么按Ubuntu版本灵活变换,所以我写下了这篇教程.</strong><a id="more"></a>
-<h1 id="1-首先把Ubuntu的软件更新源更换为国内的源-这里提供阿里云的镜像源"><a href="#1-首先把Ubuntu的软件更新源更换为国内的源-这里提供阿里云的镜像源" class="headerlink" title="1. 首先把Ubuntu的软件更新源更换为国内的源,这里提供阿里云的镜像源."></a>1. 首先把Ubuntu的软件更新源更换为国内的源,这里提供阿里云的镜像源.</h1></li>
+        <p><strong>今天弄了好久的ROS,总算是装好了，发现网上好多文章都还是Ubuntu老版本的,小白又不懂的怎么按Ubuntu版本灵活变换,所以我写下了这篇教程.</strong></p>
+<a id="more"></a>
+<h1 id="1-首先把Ubuntu的软件更新源更换为国内的源-这里提供阿里云的镜像源"><a href="#1-首先把Ubuntu的软件更新源更换为国内的源-这里提供阿里云的镜像源" class="headerlink" title="1. 首先把Ubuntu的软件更新源更换为国内的源,这里提供阿里云的镜像源."></a>1. 首先把Ubuntu的软件更新源更换为国内的源,这里提供阿里云的镜像源.</h1><ul>
 <li><strong>打开Terminal(终端)执行<code>sudo gedit /etc/apt/sources.list</code>(打开软件源文件进行编辑),将其中的内容全部删除.</strong></li>
 <li><strong>更换为以下内容</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial-security main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial-updates main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial-proposed main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial-backports main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb-src http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb-src http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial-security main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb-src http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial-updates main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb-src http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial-proposed main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb-src http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; xenial-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure></li>
 <li><strong>更新软件源</strong><br><code>sudo apt update</code><h1 id="2-开始安装ROS"><a href="#2-开始安装ROS" class="headerlink" title="2. 开始安装ROS"></a>2. 开始安装ROS</h1></li>
